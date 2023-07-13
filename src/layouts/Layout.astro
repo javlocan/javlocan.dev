@@ -25,44 +25,73 @@ const { title } = Astro.props;
 <style is:global>
   :root {
     font-size: 14pt;
-    --accent: 124, 58, 237;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      #da62c4 30%,
-      white 60%
-    );
-    --clr-bg-dark: rgb(50, 6, 54);
+    font-weight: 364;
+    line-height: 1.25em;
+    font-family: Arial;
 
     --max-width: 1200px;
+    --border-radius: 12px;
     --default-pd: 3rem;
+
+    --color-primary-medium: rgb(208, 76, 166);
+
+    --clr-bg-med: 52, 37, 58;
+    --clr-bg-dark: 38, 20, 47;
+  }
+
+  @font-face {
+    font-family: "Blinker";
+    src: url("Blinker_variable.woff2") format("woff2") tech("variations");
+    src: url("Blinker_variable.woff2") format("woff2-variations");
+    font-weight: 100 1000;
   }
   * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
   }
-  html,
-  body {
-    scroll-behaviour: smooth;
-  }
+
   html {
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+
     font-family: system-ui, sans-serif;
-    background-color: #f6f6f6;
   }
   body {
     position: relative;
+    background: rgb(var(--clr-bg-dark));
   }
   code {
     font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
   section {
+    scroll-snap-align: start;
+    perspective: 500px;
     opacity: 0;
     margin-top: 20px;
     transition: opacity 0.5s ease-in;
     transition: margin-top 0.5s ease-in;
     transition-delay: 0.2s;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Blinker";
+    font-variation-settings: "wght" 400;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-variation-settings: "wght" 690;
+    font-size: 4rem;
+    line-height: 0.9em;
+  }
+  h2 {
+    font-size: 2rem;
+    font-variation-settings: "wght" 700;
   }
   .active {
     opacity: 1;
@@ -70,5 +99,25 @@ const { title } = Astro.props;
     transition: margin-top 0.5s ease-in;
     transition: opacity 0.5s ease-in;
     transition-delay: 0.2s;
+  }
+  h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-variation-settings: "wght" 420;
+  }
+  h4 {
+    font-size: 1.4rem;
+    line-height: 1.3em;
+    font-variation-settings: "wght" 520;
+    color: rgb(171, 171, 171);
+  }
+  h4 b {
+    font-variation-settings: "wght" 720;
+    font-style: italic;
+    color: rgb(233, 233, 233);
+  }
+
+  p {
+    font-size: 1rem;
   }
 </style>

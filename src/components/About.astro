@@ -11,29 +11,30 @@
       roots as a <b>fullstack</b> and <b>frontend</b> developer
     </h4>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sapiente
-      itaque nesciunt nemo consequatur, aperiam deleniti illo necessitatibus
-      suscipit et? Ea nostrum omnis magni natus quod incidunt modi fugit rerum!
-      Molestias distinctio delectus maiores tenetur fugiat explicabo enim hic
-      rerum voluptatem nobis eaque molestiae unde error non, debitis soluta quod
-      rem. Fugiat expedita molestiae, tempore aut consectetur dolores dolor.
-      Consequuntur. Ipsa totam tenetur iusto voluptate praesentium ut maiores
-      illum necessitatibus non, numquam aut alias, voluptatibus cupiditate dolor
-      nemo illo enim dolores minus. Vitae repellendus numquam dolor architecto,
-      amet voluptas mollitia. Debitis consequuntur molestias pariatur nobis nam?
-      Vitae excepturi aperiam optio omnis nostrum. Reprehenderit delectus,
-      excepturi earum inventore illo quaerat praesentium ab minima est fugiat
-      omnis magni saepe expedita voluptate? Reiciendis.
+      A los 13 años destripaba plantillas de Tumblr. CSS2, HTML4... ¿Remember
+      Microsoft Frontpage? Lo dejé cuando 10.000 personas habían elegido la más
+      básica, fea y poco trabajada de todas las que hice. Diseñaba firmas para
+      foros en la vanguardia del Photoshop (CS6) y jugaba con wordpress y
+      blogspot cuando se hacían la competencia. Javascript era, a menudo, esa
+      cosa que hacía romperse las páginas y las llenaba de historias molestas
+      que cargaban extremadamente lento. En ingeniería aprendí algoritmia con C.
+      Descubrí cuánto disfrutaba resolviendo problemas lógicos y la creatividad
+      que podía poner en ello. <br /><br />Ha llovido desde entonces. Ahora me
+      dedico a construir soluciones lógicas y visuales para la web, poniendo la
+      intuitividad y accesibilidad en el centro. Una tecnología con
+      interactividad sencilla y natural, algo que todas podamos usar.
     </p>
   </div>
 </section>
-
 <style>
   .container {
     width: 100vw;
     padding: 6rem 3rem;
-    background-color: rgba(255, 255, 255, 0.98);
-    color: black;
+    background-color: rgba(var(--clr-bg-med), 0.95);
+    color: white;
+
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    z-index: 99;
   }
 
   .grid {
@@ -49,9 +50,8 @@
     margin-bottom: -1rem;
   }
   .hi b {
-    animation: whatev 3s infinite;
-    font-variation-settings: "wght" 900, "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 1;
     font-size: 4rem;
+    font-variation-settings: "wght" 750;
   }
 
   .photo {
@@ -96,37 +96,6 @@
     }
     .hi {
       line-height: 1.25em;
-    }
-    .hi::after {
-      width: 85%;
-    }
-  }
-
-  @keyframes whatev {
-    from {
-      font-variation-settings: "wght" 900, "MONO" 0, "CASL" 0, "slnt" 0,
-        "CRSV" 1;
-    }
-    5% {
-      font-variation-settings: "wght" 900, "MONO" 0, "CASL" 0, "slnt" -15,
-        "CRSV" 1;
-    }
-    10% {
-      font-variation-settings: "wght" 900, "MONO" 0, "CASL" 0, "slnt" 0,
-        "CRSV" 1;
-    }
-    15% {
-      font-variation-settings: "wght" 900, "MONO" 0, "CASL" 0, "slnt" -15,
-        "CRSV" 1;
-    }
-    20% {
-      font-variation-settings: "wght" 900, "MONO" 0, "CASL" 0, "slnt" 0,
-        "CRSV" 1;
-    }
-
-    to {
-      font-variation-settings: "wght" 900, "MONO" 0, "CASL" 0, "slnt" 0,
-        "CRSV" 1;
     }
   }
 </style>

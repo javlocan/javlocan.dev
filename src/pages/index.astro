@@ -3,20 +3,21 @@ import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
 import Landing from "../components/Landing.astro";
 import About from "../components/About.astro";
+import Contact from "../components/Contact.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="javlocan.dev">
   <header>
     <NavBar />
   </header>
-
   <main>
     <Landing />
     <div id="chivato" class="chivato"></div>
     <About />
   </main>
-
-  <footer></footer>
+  <footer>
+    <Contact />
+  </footer>
 </Layout>
 
 <style>
@@ -28,6 +29,8 @@ import About from "../components/About.astro";
     position: fixed;
     top: 0;
     z-index: 9999;
+  }
+  footer {
   }
   h1 {
     font-size: 3rem;
