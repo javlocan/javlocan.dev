@@ -1,0 +1,5 @@
+{
+	"runtime": "nodejs20.x",
+	"handler": "dist/entry.mjs",
+	"launcherType": "Nodejs"
+}
