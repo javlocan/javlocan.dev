@@ -9,5 +9,4 @@ export default defineConfig({
   adapter: vercelServerless(),
   integrations: [react()],
   allowImportingTsExtensions: true,
-  site: "https://astrojs-portfolio.vercel.app/",
 });
