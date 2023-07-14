@@ -8,6 +8,5 @@ export default defineConfig({
   output: "static",
   adapter: vercelStatic(),
   integrations: [react()],
-  allowImportingTsExtensions: true,
-  site: "https://astrojs-portfolio.vercel.app/",
+  //allowImportingTsExtensions: true,
 });
