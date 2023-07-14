@@ -1,0 +1,101 @@
+<section class="container" id="about">
+  <div class="grid">
+    <img src="/perfil.jpeg" alt="Javier" class="photo" />
+    <h2 class="hi">
+      <b>Hi! 👋🏼</b>
+      <br />
+      This is me, javi
+    </h2>
+    <h4>
+      After a wild career in social work, I&apos;m now back to my engineering
+      roots as a <b>fullstack</b> and <b>frontend</b> developer
+    </h4>
+    <p>
+      A los 13 años destripaba plantillas de Tumblr. CSS2, HTML4... ¿Remember
+      Microsoft Frontpage? Lo dejé cuando 10.000 personas habían elegido la más
+      básica, fea y poco trabajada de todas las que hice. Diseñaba firmas para
+      foros en la vanguardia del Photoshop (CS6) y jugaba con wordpress y
+      blogspot cuando se hacían la competencia. Javascript era, a menudo, esa
+      cosa que hacía romperse las páginas y las llenaba de historias molestas
+      que cargaban extremadamente lento. En ingeniería aprendí algoritmia con C.
+      Descubrí cuánto disfrutaba resolviendo problemas lógicos y la creatividad
+      que podía poner en ello. <br /><br />Ha llovido desde entonces. Ahora me
+      dedico a construir soluciones lógicas y visuales para la web, poniendo la
+      intuitividad y accesibilidad en el centro. Una tecnología con
+      interactividad sencilla y natural, algo que todas podamos usar.
+    </p>
+  </div>
+</section>
+<style>
+  .container {
+    width: 100vw;
+    padding: 6rem 3rem;
+    background-color: rgba(var(--clr-bg-med), 0.95);
+    color: white;
+
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+  }
+
+  .grid {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+    position: relative;
+  }
+
+  .hi {
+    position: relative;
+    margin-bottom: -1rem;
+  }
+  .hi b {
+    font-size: 4rem;
+    font-variation-settings: "wght" 750;
+  }
+
+  .photo {
+    width: 100%;
+    object-fit: cover;
+    object-position: 80%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+
+    grid-row: 3;
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding: 3rem 3rem;
+    }
+    .grid {
+      grid-template-columns: repeat(5, 1fr);
+      column-gap: 3rem;
+      padding-block: 3rem;
+    }
+    .grid :nth-child(1) {
+      width: 100%;
+      height: 100%;
+      object-position: 70%;
+      border-radius: 2rem;
+      margin: 0;
+      grid-column: 4/6;
+      grid-row: 1/4;
+    }
+    .grid :nth-child(2) {
+      grid-column: 1/4;
+      grid-row: 1/2;
+    }
+    .grid :nth-child(3) {
+      grid-column: 1/4;
+      grid-row: 2/3;
+    }
+    .grid :nth-child(4) {
+      grid-column: 1/4;
+      grid-row: 3/4;
+    }
+    .hi {
+      line-height: 1.25em;
+    }
+  }
+</style>

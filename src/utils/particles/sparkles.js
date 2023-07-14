@@ -1,5 +1,5 @@
 window.onload = function () {
-  let numberOfParticles = parseInt(window.innerWidth / 15) || 100;
+  let numberOfParticles = parseInt(window.innerWidth / 15);
   console.log(numberOfParticles);
 
   Particles.init({
