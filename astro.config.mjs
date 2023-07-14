@@ -9,5 +9,5 @@ export default defineConfig({
   adapter: vercel(),
   integrations: [react()],
   allowImportingTsExtensions: true,
-  site: "https://astrojs-portfolio.vercel.dev",
+  site: "https://astrojs-portfolio.vercel.app/",
 });
