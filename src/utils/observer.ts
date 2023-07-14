@@ -1,11 +1,17 @@
 const sections = document.querySelectorAll("section");
+const about = document.getElementById("about") as HTMLElement;
+const navbarObserver = document.getElementById("navbar") as HTMLElement;
 
-const observer = new IntersectionObserver(
+// We are gonna observe two things:
+// - sections: to uncover as we scroll, then unobserve
+// - the first section (about) to manipulate the navbarObserver
+
+const sectionObserver = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add("active");
-        observer.unobserve(entry.target);
+        sectionObserver.unobserve(entry.target);
       }
     });
   },
@@ -15,5 +21,27 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => {
-  observer.observe(section);
+  sectionObserver.observe(section);
 });
+/* 
+const navObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      console.log(
+        "About.isIntersecting",
+        entry.isIntersecting,
+        navbarObserver.classList
+      );
+      if (entry.isIntersecting) {
+        navbarObserver.classList.add("scrolled");
+      } else {
+        navbarObserver.classList.remove("scrolled");
+      }
+    });
+  },
+  {
+    rootMargin: "-30%",
+  }
+);
+
+navObserver.observe(about); */

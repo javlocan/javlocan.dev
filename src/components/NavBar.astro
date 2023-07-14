@@ -1,20 +1,54 @@
 <nav class="container" id="navbar">
-  <h3>Hello</h3>
+  <a href="#about" id="menubutton" class="menubutton">B</a>
 </nav>
 
 <style>
   .container {
+    position: relative;
+
     width: 100vw;
+    min-height: 95dvh;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
     background: var(--clr-bg-dark);
     color: white;
-    padding: 1rem 3rem;
+  }
+  .container * {
     opacity: 0;
+    transition: opacity 0.3s ease-in-out 1s;
+  }
+
+  .menubutton {
+    cursor: pointer;
+    color: white;
+    opacity: 1;
+    font-size: 2.2rem;
+    font-family: "Anicons";
+    font-variation-settings: "TIME" 100;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    z-index: 99;
+
+    /*transition: all 0.3s ease-in-out;*/
+  }
+
+  .nav-scroll {
+    min-height: 10dvh;
+    /*   border-bottom: 1px solid black;
+    backdrop-filter: blur(10px); */
+  }
+  .nav-scroll * {
+    opacity: 1;
     transition: opacity 0.3s ease-in-out;
   }
 
-  .scroll {
-    border-bottom: 1px solid black;
-    opacity: 1;
-    backdrop-filter: blur(10px);
-  }
+  /*  .menu-scroll {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+    transition: transform 0.3s ease-in-out;
+  } */
 </style>
