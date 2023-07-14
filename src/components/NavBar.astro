@@ -1,28 +1,48 @@
 <nav class="container" id="navbar">
-  <a href="#about" id="menubutton" class="menubutton">B</a>
+  <a id="navicon" class="nav-icon">B</a>
 </nav>
 
 <style>
   .container {
     position: relative;
 
-    width: 100vw;
-    min-height: 95dvh;
-    padding: 2rem 3rem;
+    margin-inline: auto;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 10vw;
+    padding: 1.5rem 2.5rem;
+
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
 
-    background: var(--clr-bg-dark);
+    background: rgba(var(--clr-bg-dark), 0);
     color: white;
-  }
-  .container * {
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out 1s;
+
+    transition: background 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
   }
 
-  .menubutton {
+  .scrolled--container {
+    background: rgba(var(--clr-bg-dark), 1);
+    transition: background 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .open--container {
+    border-radius: 0px;
+    padding-top: 2.5rem;
+    margin: 0;
+    width: 100vw;
+    height: 100dvh;
+    transition: width 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
+  }
+
+  .nav-icon {
     cursor: pointer;
     color: white;
     opacity: 1;
@@ -32,23 +52,5 @@
     transform: rotate(-90deg);
     transform-origin: center;
     z-index: 99;
-
-    /*transition: all 0.3s ease-in-out;*/
   }
-
-  .nav-scroll {
-    min-height: 10dvh;
-    /*   border-bottom: 1px solid black;
-    backdrop-filter: blur(10px); */
-  }
-  .nav-scroll * {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-  }
-
-  /*  .menu-scroll {
-    transform: rotate(0deg);
-    transform-origin: 50% 50%;
-    transition: transform 0.3s ease-in-out;
-  } */
 </style>
