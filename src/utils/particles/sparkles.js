@@ -1,3 +1,5 @@
+import Particles from "particles.js";
+
 window.onload = function () {
   let numberOfParticles = parseInt(window.innerWidth / 15);
   console.log(numberOfParticles);
