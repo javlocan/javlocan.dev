@@ -4,21 +4,20 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import "./NavBar.css";
 
 export const NavBarComponent = () => {
-  const [open, setOpen] = useState(false);
-  const [icon, setIcon] = useState("B");
-  const [position, setPosition] = useState();
   const perOneValue = useRef();
 
   useEffect(() => {
     const navIcon = document.getElementById("navicon");
 
     window.addEventListener("scroll", () => {
-      const perOne = getPerOne();
+      const scroll = window.scrollY || document.documentElement.scrollTop;
+      const height =
+        window.innerHeight || document.documentElement.clientHeight;
+
+      const perOne = (height - scroll) / height;
       perOneValue.current = perOne;
       console.log(perOneValue.current);
 
-      if (perOne > 0) setIcon("B");
-      if (perOne < 0) setIcon("A");
       const degrees = () => {
         const result = perOne * 90;
         if (result > 90) return 90;
@@ -51,6 +50,7 @@ export const NavBarComponent = () => {
       navIcon.style.transform = `rotate(${-degrees()}deg)`;
       navIcon.style.marginTop = `${place()}vh`;
       navIcon.style.marginTop = `${place()}dvh`;
+      navIcon.style.opacity = perOne;
     });
   }, []);
 
@@ -63,16 +63,11 @@ export const NavBarComponent = () => {
 
   return (
     <nav className="nav-container" id="navbar">
-      <div id="navicon" className="nav-icon" onClick={() => handleClick()}>
-        {icon}
+      <div id="navicon" className="nav-icon" onClick={handleClick}>
+        B
       </div>
     </nav>
   );
 };
 
-const getPerOne = () => {
-  const scroll = window.scrollY || document.documentElement.scrollTop;
-  const height = window.innerHeight || document.documentElement.clientHeight;
-
-  return (height - scroll) / height;
-};
+const getPerOne = () => {};
