@@ -40,8 +40,8 @@ export const NavBarComponent = () => {
       };
 
       const place = () => {
-        const result = perOne * 85;
-        if (result > 90) return 85;
+        const result = perOne * 80;
+        if (result > 80) return 80;
         if (result < 0) return 0;
         return result;
       };
@@ -50,6 +50,7 @@ export const NavBarComponent = () => {
       navIcon.style.fontSize = `${size() * 2.2}rem`;
       navIcon.style.transform = `rotate(${-degrees()}deg)`;
       navIcon.style.marginTop = `${place()}vh`;
+      navIcon.style.marginTop = `${place()}dvh`;
     });
   }, []);
 
