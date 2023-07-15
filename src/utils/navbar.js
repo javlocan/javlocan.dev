@@ -39,23 +39,4 @@ window.addEventListener("scroll", () => {
   navIcon.style.fontSize = `${scale() * 2.2}rem`;
   navIcon.style.transform = `rotate(${-degrees()}deg)`;
   navIcon.style.marginTop = `${place()}vh`;
-
-  if (perOne < 0.5) {
-    navContainer.classList.add("scrolled--container");
-  } else {
-    navContainer.classList.remove("scrolled--container");
-  }
-  navIcon.addEventListener("click", () => {
-    if (perOne > 0.0) {
-      // si está arriba
-      window.scrollTo(0, height);
-    } else {
-      // si está abajo
-      if (navContainer.classList.contains("open--container")) {
-        navContainer.classList.remove("open--container");
-      } else {
-        navContainer.classList.add("open--container");
-      }
-    }
-  });
 });

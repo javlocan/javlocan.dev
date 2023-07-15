@@ -4,6 +4,7 @@ import NavBar from "../components/NavBar.astro";
 import Landing from "../islands/Landing.astro";
 import About from "../islands/About.astro";
 import Contact from "../islands/Contact.astro";
+import { NavBarComponent } from "../components/NavBar/NavBar";
 ---
 
 <Layout title="javlocan.dev">
@@ -23,13 +24,13 @@ import Contact from "../islands/Contact.astro";
 <style>
   main {
     position: relative;
-    min-height: 400vh;
   }
   header {
-    width: 100vw;
     position: fixed;
     top: 0;
     z-index: 9999;
+
+    width: 100vw;
   }
   footer {
   }

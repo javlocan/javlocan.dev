@@ -627,7 +627,6 @@ var Particles = (function (window, document) {
 
 window.onload = function () {
   let numberOfParticles = parseInt(window.innerWidth / 15);
-  console.log(numberOfParticles);
 
   Particles.init({
     selector: ".sparkles",

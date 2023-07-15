@@ -1,0 +1,33 @@
+.nav-container {
+  position: relative;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: rgba(var(--clr-bg-dark), 1);
+  color: white;
+
+  transition: background 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+.nav-icon {
+  position: fixed;
+  cursor: pointer;
+  margin-inline: auto;
+  color: white;
+  background: rgba(var(--clr-bg-dark), 1);
+  padding: 1rem 0.6rem;
+  border-radius: 10px;
+
+  opacity: 1;
+  font-size: 2.2rem;
+  font-family: "Anicons";
+  font-variation-settings: "TIME" 100;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  z-index: 99;
+}

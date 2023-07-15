@@ -1,7 +1,12 @@
-<nav class="container" id="navbar">
-  <a id="navicon" class="nav-icon">B</a>
-</nav>
+---
+import { NavBarComponent } from "./NavBar/NavBar.jsx";
+---
 
+<NavBarComponent client:only="react" />
+
+<!-- <nav class="container" id="navbar">
+  <a id="navicon" class="nav-icon">B</a>
+</nav> -->
 <style>
   .container {
     position: relative;
@@ -52,5 +57,26 @@
     transform: rotate(-90deg);
     transform-origin: center;
     z-index: 99;
+  }
+  .nav-container {
+    position: relative;
+
+    margin-inline: auto;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    width: 10vw;
+    padding: 1.5rem 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: rgba(var(--clr-bg-dark), 0);
+    color: white;
+
+    transition: background 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: height 0.3s ease-in-out;
   }
 </style>
