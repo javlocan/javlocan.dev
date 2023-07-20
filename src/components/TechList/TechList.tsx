@@ -14,6 +14,7 @@ interface Content {
 
 export const TechList = (props: Record<string, string>): JSX.Element => {
   const [data, setData] = useState<ITechList>();
+
   useEffect(() => {
     fetch(`/data/${props.jsonName}.json`)
       .then((r) => r.json())
@@ -21,26 +22,22 @@ export const TechList = (props: Record<string, string>): JSX.Element => {
       .catch(console.error);
   }, []);
 
-  console.log(data);
-
   return (
-    <div className={styles.techTable}>
+    <div className={styles.table}>
       <h2>{data?.header}</h2>
       {data?.description ? (
-        <p style={{ fontStyle: "italic" }}>{data?.description}</p>
+        <span style={{ fontStyle: "italic" }}>{data?.description}</span>
       ) : null}
-
-      {data?.content.map((item) => (
-        <div key={item.title}>
-          <h4 key={item.title}>{item.title}</h4>
-
-          <ul>
+      <div className={styles.list}>
+        {data?.content.map((item) => (
+          <ul key={item.title}>
+            <h4 key={item.title}>{item.title}</h4>
             {item.items.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

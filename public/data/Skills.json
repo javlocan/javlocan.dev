@@ -4,7 +4,7 @@
   "content": [
     {
       "title": "Languages",
-      "items": ["JavaScript", "HTML", "CSS"]
+      "items": ["JavaScript", "TypeScript", "HTML", "CSS"]
     },
     {
       "title": "Human Languages",
@@ -12,7 +12,16 @@
     },
     {
       "title": "Approaches",
-      "items": ["FOSS", "SOLID", "TDD", "Agile", "Edge"]
+      "items": ["SOLID", "TDD", "Agile", "Edge"]
+    },
+    {
+      "title": "So-called soft skills",
+      "items": [
+        "Active listening",
+        "Effective communication",
+        "Critical thinking",
+        "Attention to detail"
+      ]
     }
   ]
 }

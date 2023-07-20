@@ -3,12 +3,24 @@
   "description": "Whatever man, this is just a placeholder",
   "content": [
     {
-      "title": "Frameworks",
-      "items": ["React", "Next", "Vite"]
+      "title": "Libraries",
+      "items": ["ReactJS", "Framer", "Spring"]
     },
     {
-      "title": "Approaches",
-      "items": ["FOSS", "SOLID", "TDD", "Agile", "Edge"]
+      "title": "Frameworks",
+      "items": ["AstroJS", "NextJS"]
+    },
+    {
+      "title": "Databases",
+      "items": ["MongoDB", "MySQL"]
+    },
+    {
+      "title": "Tools",
+      "items": ["ViteJS", "Git", "Jest"]
+    },
+    {
+      "title": "Linux",
+      "items": ["Shell", "Arch-based (Personal)", "Debian-based (Server)"]
     }
   ]
 }

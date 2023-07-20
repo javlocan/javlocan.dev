@@ -1,28 +1,48 @@
-.techTable {
-  width: 100%;
+.table {
   max-width: var(--max-width);
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 1rem 4rem;
-  padding: 2rem;
+  padding: 2rem 3rem;
   border-radius: 12px;
   background: rgba(var(--clr-bg-med), 0.8);
 }
 
-.techTable ul {
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  gap: 4rem;
+}
+
+.list ul {
+  font-size: 0.9rem;
   list-style: none;
   line-height: 2em;
 }
 
+.list h4 {
+  margin-bottom: 0.75rem;
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 800px) {
-  .techTable {
-    grid-template-columns: min-content;
+  .table {
+    grid-template-columns: repeat(4, 1fr);
   }
-  .techTable :nth-child(1) {
+
+  .table :nth-child(2n) {
+    grid-row: 3/3;
+  }
+  .table :nth-child(2n + 1) {
+    grid-row: 3/3;
+  }
+  .table :nth-child(1) {
     grid-column: 1/4;
     grid-row: 1/1;
   }
-  .techTable :nth-child(2):is(p) {
+  .table :nth-child(2):is(span) {
     color: #bbb;
     grid-column: 1/4;
     grid-row: 2/2;
