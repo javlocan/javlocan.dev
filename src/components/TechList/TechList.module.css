@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 800px) {
   .techTable {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: min-content;
   }
   .techTable :nth-child(1) {
     grid-column: 1/4;
