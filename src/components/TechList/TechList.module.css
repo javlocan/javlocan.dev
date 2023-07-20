@@ -1,0 +1,30 @@
+.techTable {
+  width: 100%;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 4rem;
+  padding: 2rem;
+  border-radius: 12px;
+  background: rgba(var(--clr-bg-med), 0.8);
+}
+
+.techTable ul {
+  list-style: none;
+  line-height: 2em;
+}
+
+@media screen and (min-width: 800px) {
+  .techTable {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .techTable :nth-child(1) {
+    grid-column: 1/4;
+    grid-row: 1/1;
+  }
+  .techTable :nth-child(2):is(p) {
+    color: #bbb;
+    grid-column: 1/4;
+    grid-row: 2/2;
+  }
+}

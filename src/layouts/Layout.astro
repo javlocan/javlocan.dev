@@ -34,7 +34,8 @@ const { title } = Astro.props;
     --default-pd: 3rem;
 
     --color-primary-medium: rgb(208, 76, 166);
-
+    --color-test: rgb(57, 28, 72);
+    --clr-bg-light: 75, 46, 89;
     --clr-bg-med: 52, 37, 58;
     --clr-bg-dark: 38, 20, 47;
   }
@@ -77,7 +78,7 @@ const { title } = Astro.props;
   }
   section {
     scroll-snap-align: start;
-    perspective: 500px;
+
     opacity: 0;
     margin-top: 20px;
     transition: opacity 0.5s ease-in;
@@ -132,7 +133,7 @@ const { title } = Astro.props;
     font-size: 1rem;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 800px) {
     h1 {
       font-size: 4em;
     }

@@ -3,8 +3,8 @@ import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
 import Landing from "../islands/Landing.astro";
 import About from "../islands/About.astro";
+import Tech from "../islands/Tech.astro";
 import Contact from "../islands/Contact.astro";
-import { NavBarComponent } from "../components/NavBar/NavBar";
 ---
 
 <Layout title="javlocan.dev">
@@ -13,8 +13,10 @@ import { NavBarComponent } from "../components/NavBar/NavBar";
   </header>
   <main>
     <Landing />
+    <canvas class="sparkles"></canvas>
     <div id="chivato" class="chivato"></div>
     <About />
+    <Tech />
   </main>
   <footer>
     <Contact />
@@ -38,5 +40,14 @@ import { NavBarComponent } from "../components/NavBar/NavBar";
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
+  }
+  .sparkles {
+    position: fixed;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
   }
 </style>

@@ -1,0 +1,18 @@
+{
+  "header": "Skills",
+  "description": "My daily practice involves the mastery of the following technologies and approaches",
+  "content": [
+    {
+      "title": "Languages",
+      "items": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+      "title": "Human Languages",
+      "items": ["Spanish, native speaker", "English, C1 certificate"]
+    },
+    {
+      "title": "Approaches",
+      "items": ["FOSS", "SOLID", "TDD", "Agile", "Edge"]
+    }
+  ]
+}

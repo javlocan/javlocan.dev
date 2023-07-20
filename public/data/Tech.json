@@ -1,0 +1,14 @@
+{
+  "header": "Technologies",
+  "description": "Whatever man, this is just a placeholder",
+  "content": [
+    {
+      "title": "Frameworks",
+      "items": ["React", "Next", "Vite"]
+    },
+    {
+      "title": "Approaches",
+      "items": ["FOSS", "SOLID", "TDD", "Agile", "Edge"]
+    }
+  ]
+}

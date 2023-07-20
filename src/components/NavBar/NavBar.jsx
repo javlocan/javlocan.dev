@@ -16,7 +16,7 @@ export const NavBarComponent = () => {
 
       const perOne = (height - scroll) / height;
       perOneValue.current = perOne;
-      console.log(perOneValue.current);
+      //console.log(perOneValue.current);
 
       const degrees = () => {
         const result = perOne * 90;
