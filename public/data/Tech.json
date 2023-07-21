@@ -3,20 +3,24 @@
   "description": "Whatever man, this is just a placeholder",
   "content": [
     {
+      "title": "Main Tech",
+      "items": ["React JS", "Vanilla JS", "Node JS"]
+    },
+    {
       "title": "Libraries",
-      "items": ["ReactJS", "Framer", "Spring"]
+      "items": ["Framer Motion", "React-Spring"]
     },
     {
       "title": "Frameworks",
-      "items": ["AstroJS", "NextJS"]
+      "items": ["Astro", "Next"]
     },
     {
       "title": "Databases",
-      "items": ["MongoDB", "MySQL"]
+      "items": ["Prisma", "MongoDB", "MySQL"]
     },
     {
       "title": "Tools",
-      "items": ["ViteJS", "Git", "Jest"]
+      "items": ["Vite", "Git", "Jest"]
     },
     {
       "title": "Linux",
