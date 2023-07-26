@@ -4,7 +4,7 @@ import { TechList } from "../components/TechList/TechList";
 
 <section id="tech" class="container">
   <TechList jsonName="Skills" client:only="react" />
-  <TechList jsonName="Tech" client:only="react" />
+  <TechList jsonName="Technologies" client:only="react" />
 </section>
 
 <style>
@@ -22,13 +22,5 @@ import { TechList } from "../components/TechList/TechList";
     background: rgba(var(--clr-bg-dark), 0.3);
     box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.1);
     z-index: 99;
-  }
-
-  .grid {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    display: grid;
-    gap: 2rem;
-    position: relative;
   }
 </style>

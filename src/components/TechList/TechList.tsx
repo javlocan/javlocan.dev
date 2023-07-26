@@ -17,8 +17,10 @@ export const TechList = (props: Record<string, string>): JSX.Element => {
 
   useEffect(() => {
     fetch(`/data/${props.jsonName}.json`)
-      .then((r) => r.json())
-      .then(setData)
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data), console.log(data);
+      })
       .catch(console.error);
   }, []);
 
