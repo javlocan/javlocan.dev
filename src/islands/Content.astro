@@ -1,11 +1,13 @@
 ---
 
-const resT = await fetch("http://localhost:3000/data/Tech.json");
+const resT = await fetch(`http://${import.meta.env.VITE_PUBLIC_VERCEL_URL}/data/Tech.json`);
 const dataT = await resT.json();
-const resS = await fetch("http://localhost:3000/data/Skills.json");
+const resS = await fetch(`http://${import.meta.env.VITE_PUBLIC_VERCEL_URL}/data/Skills.json`);
 const dataS = await resS.json();
 ---
-
+<script>
+  
+</script>
 <section class="container">
   <div class="skills" id="skills">
     <h2>{dataS?.header}</h2>
