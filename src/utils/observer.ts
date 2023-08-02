@@ -23,25 +23,3 @@ const sectionObserver = new IntersectionObserver(
 sections.forEach((section) => {
   sectionObserver.observe(section);
 });
-/* 
-const navObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      console.log(
-        "About.isIntersecting",
-        entry.isIntersecting,
-        navbarObserver.classList
-      );
-      if (entry.isIntersecting) {
-        navbarObserver.classList.add("scrolled");
-      } else {
-        navbarObserver.classList.remove("scrolled");
-      }
-    });
-  },
-  {
-    rootMargin: "-30%",
-  }
-);
-
-navObserver.observe(about); */

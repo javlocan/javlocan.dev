@@ -18,5 +18,9 @@
     "particlesjs": "^2.2.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.46.0",
+    "eslint-plugin-astro": "^0.28.0"
   }
 }

@@ -16,6 +16,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <!--     <script src="../utils/navbar.js"></script> -->
+    <script src="../utils/particles/particles.js"></script>
     <script src="../utils/observer.ts"></script>
   </head>
   <body>
@@ -64,7 +65,7 @@ const { title } = Astro.props;
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    scroll-snap-type: y mandatory;
+    /*  scroll-snap-type: y mandatory; */
 
     font-family: system-ui, sans-serif;
   }
@@ -77,12 +78,8 @@ const { title } = Astro.props;
       DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
   }
   section {
-    scroll-snap-align: start;
-
     opacity: 0;
-    margin-top: 20px;
     transition: opacity 0.5s ease-in;
-    transition: margin-top 0.5s ease-in;
     transition-delay: 0.2s;
   }
   h1,
@@ -91,6 +88,7 @@ const { title } = Astro.props;
   h4,
   h5,
   h6 {
+    color: white;
     font-family: "Blinker";
     font-variation-settings: "wght" 400;
   }
@@ -101,14 +99,12 @@ const { title } = Astro.props;
     line-height: 0.9em;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     line-height: 1.25em;
     font-variation-settings: "wght" 700;
   }
   .active {
     opacity: 1;
-    margin-top: 0px;
-    transition: margin-top 0.5s ease-in;
     transition: opacity 0.5s ease-in;
     transition-delay: 0.2s;
   }
@@ -131,16 +127,14 @@ const { title } = Astro.props;
   }
 
   p {
+    opacity: 0.9;
     font-size: 1rem;
+    line-height: 1.5em;
   }
 
   @media screen and (min-width: 800px) {
     h1 {
       font-size: 4em;
-    }
-    h2 {
-      font-size: 2.2rem;
-      line-height: 2.2rem;
     }
   }
 </style>

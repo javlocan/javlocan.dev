@@ -3,28 +3,24 @@
   "description": "Whatever man, this is just a placeholder",
   "content": [
     {
-      "title": "Main Tech",
-      "items": ["React JS", "Vanilla JS", "Node JS"]
+      "title": "Front End",
+      "items": ["React JS", "Vanilla JS/TS", "HTMX"]
+    },
+    {
+      "title": "Full Stack",
+      "items": ["Next JS", "Astro JS"]
+    },
+    {
+      "title": "Back End",
+      "items": ["Node JS", "MongoDB", "MySQL"]
     },
     {
       "title": "Libraries",
-      "items": ["Framer Motion", "React-Spring"]
-    },
-    {
-      "title": "Frameworks",
-      "items": ["Astro", "Next"]
-    },
-    {
-      "title": "Databases",
-      "items": ["Prisma", "MongoDB", "MySQL"]
+      "items": ["Prisma", "Framer Motion", "React Spring"]
     },
     {
       "title": "Tools",
       "items": ["Vite", "Git", "Jest"]
-    },
-    {
-      "title": "Linux",
-      "items": ["Shell", "Arch-based (Personal)", "Debian-based (Server)"]
     }
   ]
 }

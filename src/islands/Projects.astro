@@ -1,0 +1,24 @@
+---
+import { ProjectList } from "../components/ProjectList/ProjectList";
+---
+
+<section class="container">
+  <h2>Projects</h2>
+  <ProjectList client:only="react" />
+</section>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+
+    height: 50vh;
+  }
+
+  .container h1 {
+    color: white;
+  }
+</style>

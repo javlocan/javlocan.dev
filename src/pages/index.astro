@@ -3,8 +3,9 @@ import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/NavBar.astro";
 import Landing from "../islands/Landing.astro";
 import About from "../islands/About.astro";
-import Tech from "../islands/Tech.astro";
+import Content from "../islands/Content.astro";
 import Contact from "../islands/Contact.astro";
+import Projects from "../islands/Projects.astro";
 ---
 
 <Layout title="javlocan.dev">
@@ -16,7 +17,7 @@ import Contact from "../islands/Contact.astro";
     <canvas class="sparkles"></canvas>
     <div id="chivato" class="chivato"></div>
     <About />
-    <Tech />
+    <Content />
   </main>
   <footer>
     <Contact />
@@ -35,11 +36,6 @@ import Contact from "../islands/Contact.astro";
     width: 100vw;
   }
   footer {
-  }
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin: 0;
   }
 
   .sparkles {
