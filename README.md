@@ -14,6 +14,6 @@ _Secondary:_ Use VSCode with minimal settings, nVim-like. Hands of mouse, faster
 - IntersectionObserver makes sections appear with a smooth animation
 
 ### Last Comments:
-
+- Tech and Skills now in Content island for recicled CSS.
 - Snappy Scroll disabled for the moment.
-- **Tech** React Component => Different Astro Islands for Skills and Tech
+- ~~**Tech** React Component => Different Astro Islands for Skills and Tech~~
